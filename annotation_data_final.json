@@ -2958,214 +2958,187 @@
   "Wan_2024_Paradox_Post_Pandemic_Travel.pdf": {
     "method": [
       {
-        "note": "For each hour, car and cycle  counts from the ﬁve cameras are aggregated, serving as the dependent variable for  regression analysis.",
+        "note": "CORE METHOD: Gamma GLM with log-link for journey time modelling — same model family as our rainfall-speed approach. Justified by heteroscedasticity detected via Breusch-Pagan test. Implemented in base R.",
         "original_texts": [
           {
-            "text": "For each hour, car and cycle  counts from the ﬁve cameras are aggregat",
-            "page": 10
-          }
-        ]
-      },
-      {
-        "note": "Hourly traFic counts are aggregated across these 13 cameras, serving as the  dependent variable for regression analysis.",
-        "original_texts": [
-          {
-            "text": "Hourly traFic counts are aggregated across these 13 cameras, serving a",
-            "page": 10
-          }
-        ]
-      },
-      {
-        "note": "As  road accidents may aFect surrounding traFic volumes and congestion levels, this study  controls for all serious and fatal road accidents in Cambridge using road accidents data  from the Cambridgeshire County Council.",
-        "original_texts": [
-          {
-            "text": "As  road accidents may aFect surrounding traFic volumes and congestion",
-            "page": 11
-          }
-        ]
-      },
-      {
-        "note": "To test for overdispersion in our traFic counts data, a tentative Poisson model was built.",
-        "original_texts": [
-          {
-            "text": "To test for overdispersion in our traFic counts data, a tentative Pois",
-            "page": 12
-          }
-        ]
-      },
-      {
-        "note": "TraAic count model  Poisson regression model is often used as a starting point for the analysis of traFic  counts data.",
-        "original_texts": [
-          {
-            "text": "TraAic count model  Poisson regression model is often used as a starti",
-            "page": 12
-          }
-        ]
-      },
-      {
-        "note": "Using a Breusch-Pagan test on a tentative linear  model with log-transformed journey time data, it was found that heteroscedasticity  exists, which may lead to inaccurate coeFicient estimates and conﬁdence intervals.",
-        "original_texts": [
-          {
-            "text": "Using a Breusch-Pagan test on a tentative linear  model with log-trans",
+            "text": "this study adopts a generalised linear model using Gamma",
             "page": 13
+          },
+          {
+            "text": "distribution with a log-link, implemented in base R",
+            "page": 13
+          }
+        ]
+      },
+      {
+        "note": "Negative Binomial regression for traffic count data (overdispersion confirmed). Implemented in R using MASS package v7.3-60.0.1.",
+        "original_texts": [
+          {
+            "text": "adopts the NB modelling approach, implemented in R",
+            "page": 13
+          },
+          {
+            "text": "version 7.3-60.0.1 of the MASS package",
+            "page": 13
+          }
+        ]
+      },
+      {
+        "note": "Overdispersion diagnostics: Dean & Lawless z-score test + residual deviance/df ratio (2,545,314/23,617 >> 1) confirm Poisson inadequacy → NB adopted.",
+        "original_texts": [
+          {
+            "text": "the z-score test developed by Dean & Lawless",
+            "page": 12
+          },
+          {
+            "text": "ratio between the residual deviance (2,545,314) and the degrees of freedom",
+            "page": 13
+          }
+        ]
+      },
+      {
+        "note": "Heteroscedasticity justification chain: Breusch-Pagan test on log-transformed journey time → heteroscedasticity confirmed → GLM should be considered → Gamma GLM adopted.",
+        "original_texts": [
+          {
+            "text": "Using a Breusch-Pagan test on a tentative linear",
+            "page": 13
+          },
+          {
+            "text": "heteroscedasticity exists, which may lead to inaccurate",
+            "page": 13
+          },
+          {
+            "text": "A generalised linear model should thus be considered",
+            "page": 13
+          }
+        ]
+      },
+      {
+        "note": "Sample sizes: 24,969 long-term traffic count records, 64,189 journey time records. 5 cameras (long-term), 13 cameras (recent), 9 ANPR cameras for journey time.",
+        "original_texts": [
+          {
+            "text": "24,969",
+            "page": 10
+          },
+          {
+            "text": "64,189",
+            "page": 10
+          }
+        ]
+      },
+      {
+        "note": "Comprehensive controls: hour, day, month, school/university term, bank holidays, major events, roadworks, accidents, temperature, precipitation.",
+        "original_texts": [
+          {
+            "text": "hour,  day, month, public school and uni",
+            "page": 14
+          },
+          {
+            "text": "precipitation",
+            "page": 11
           }
         ]
       }
     ],
     "conclusion": [
       {
-        "note": "Policy implications  Car and cycle demand in post-pandemic Cambridge has reduced compared to pre- pandemic levels.",
+        "note": "Core paradox quantified: car demand fell 11.6%, cycle 15.8% below pre-pandemic — yet journey times ROSE 12.0% from 2022-2024.",
         "original_texts": [
           {
-            "text": "Policy implications  Car and cycle demand in post-pandemic Cambridge h",
-            "page": 23
+            "text": "Car and cycle demand in Cambridge in the PP-S period remains at 11.6%",
+            "page": 14
           }
         ]
       },
       {
-        "note": "However, the expected mode shift to cycling and lessened traFic  congestion are yet to be substantiated.",
+        "note": "Three-part decomposition: (1) evening peak + Thursday congestion worsened, (2) no demand increase at peak times, (3) supply-side factors (road space reallocation) are the cause.",
         "original_texts": [
           {
-            "text": "However, the expected mode shift to cycling and lessened traFic  conge",
-            "page": 23
+            "text": "worsening congestion at evening peaks and on Thursdays",
+            "page": 26
           }
         ]
       },
       {
-        "note": "However, this traFic reduction eFect, as statistically demonstrated in  the Cambridge case, seems to have diminished and travel demand has stabilised since  2022, implying potentially saturated ﬂexible working practice in the local labour market.",
+        "note": "Supply-side attribution confirmed: NO significant demand increase for any mode. Congestion from road space reallocation for cycling/active modes.",
         "original_texts": [
           {
-            "text": "However, this traFic reduction eFect, as statistically demonstrated in",
-            "page": 23
-          }
-        ]
-      },
-      {
-        "note": "Secondly, a reduction of aggregate car travel demand does not necessarily lead to an  improvement in traFic congestion.",
-        "original_texts": [
+            "text": "no statistically signiﬁcant increase of ",
+            "page": 22
+          },
           {
-            "text": "Secondly, a reduction of aggregate car travel demand does not necessar",
-            "page": 23
-          }
-        ]
-      },
-      {
-        "note": "Despite the long-term eFects, car and cycle travel demand in Cambridge appears  to have stabilised since 2022, while daily average journey time on key transport  corridors has increased by 12.",
-        "original_texts": [
-          {
-            "text": "Despite the long-term eFects, car and cycle travel demand in Cambridge",
-            "page": 25
-          }
-        ]
-      },
-      {
-        "note": "Conclusion  This study aims to address an emerging paradox of post-pandemic travel, where a  reduction in overall travel demand, induced by ﬂexible/remote working, is often  associated with unbated, if not worsened, traFic congestion.",
-        "original_texts": [
-          {
-            "text": "Conclusion  This study aims to address an emerging paradox of post-pan",
-            "page": 25
+            "text": "reallocation of road space for public and active m",
+            "page": 26
           }
         ]
       }
     ],
     "innovation": [
       {
-        "note": "Insights from Cambridge, UK  Li Wan* and Byron Huang  Department of Land Economy, University of Cambridge     * Corresponding author    Abstract  The growing prevalence of ﬂexible/remote working and the policy push for active travel  since the COVID-19 pandemic are expected to help to mitigate urban",
+        "note": "First empirical study identifying the demand-congestion paradox in post-pandemic cities.",
         "original_texts": [
           {
-            "text": "Insights from Cambridge, UK  Li Wan* and Byron Huang  Department of La",
-            "page": 1
-          }
-        ]
-      },
-      {
-        "note": "It is shown that recent car and cycle  demand in Cambridge remains at 11.",
-        "original_texts": [
-          {
-            "text": "It is shown that recent car and cycle  demand in Cambridge remains at ",
-            "page": 2
-          }
-        ]
-      },
-      {
-        "note": "Despite the overall reduction in travel  demand, daily average journey time on key transport corridors in Cambridge has  increased by 12.",
-        "original_texts": [
-          {
-            "text": "Despite the overall reduction in travel  demand, daily average journey",
-            "page": 2
-          }
-        ]
-      },
-      {
-        "note": "This study aims to  investigate this paradox of post-pandemic travel through an in-depth case study of  Cambridge, a city with a high proportion of high-skilled professional employment in the  UK.",
-        "original_texts": [
-          {
-            "text": "This study aims to  investigate this paradox of post-pandemic travel t",
-            "page": 2
-          }
-        ]
-      },
-      {
-        "note": "Firstly, this paper is one of the ﬁrst empirical studies identifying and probing  into the paradoxical relationship between travel demand and traFic congestion in post- pandemic cities.",
-        "original_texts": [
-          {
-            "text": "Firstly, this paper is one of the ﬁrst empirical studies identifying a",
+            "text": "one of the ﬁrst empirical studies identifying and ",
             "page": 4
           }
         ]
       },
       {
-        "note": "To the best of our  knowledge, no further study exists that examines the potential change in travel patterns  in Cambridge after the initial post-pandemic period.",
+        "note": "Novel intra-day/week perspective contests the presumed benefit of flexible working in reducing peak congestion.",
         "original_texts": [
           {
-            "text": "To the best of our  knowledge, no further study exists that examines t",
-            "page": 7
+            "text": "the novel intra-day/week perspective unfolds fresh",
+            "page": 4
+          }
+        ]
+      },
+      {
+        "note": "Transferable method: similar traffic monitoring data exists in most UK local transport authorities — approach is replicable.",
+        "original_texts": [
+          {
+            "text": "robust and transferrable method",
+            "page": 4
           }
         ]
       }
     ],
     "limitation": [
       {
-        "note": "The study has several limitations.",
+        "note": "The study explicitly acknowledges several limitations.",
         "original_texts": [
           {
-            "text": "The study has several lim",
+            "text": "The study has several limitations",
             "page": 26
           }
         ]
       },
       {
-        "note": "Firstly, while the paradox of post-pandemic travel is  likely to be present in major cities in the UK, the generalisability of our ﬁndings is yet to  be tested.",
+        "note": "Firstly: Cambridge-specific — generalisability untested, though method is transferrable to other UK cities with similar data.",
         "original_texts": [
           {
-            "text": "Firstly, while the paradox of post-pandemic travel is  likely to be pr",
+            "text": "generalisability of our",
             "page": 26
           }
         ]
       },
       {
-        "note": "The generalisability of our  ﬁndings can thus be veriﬁed through more comparative studies in the future.",
+        "note": "Secondly: No statistical evidence on supply-side effects — only inference from demand-side analysis.",
         "original_texts": [
           {
-            "text": "The generalisability of our  ﬁndings can thus be veriﬁed through more ",
+            "text": "does not provide statistical evidence on the e",
             "page": 26
           }
         ]
       },
       {
-        "note": "Secondly,  the study does not provide statistical evidence on the eFects of supply-side changes on  travel demand and journey time, which will be explored in future studies.",
+        "note": "Lastly: No traveller demographics — cannot disaggregate by socio-economic group or trip purpose. Critical for targeted policy.",
         "original_texts": [
           {
-            "text": "Secondly,  the study does not provide statistical evidence on the eFec",
+            "text": "inherent limitation with the analysis of tra",
             "page": 26
-          }
-        ]
-      },
-      {
-        "note": "Lastly, an  inherent limitation with the analysis of traFic counts is the lack of information on socio- economic background of travellers and trip purpose.",
-        "original_texts": [
+          },
           {
-            "text": "Lastly, an  inherent limitation with the analysis of traFic counts is ",
+            "text": "disaggregate travel demand changes by traveller gr",
             "page": 26
           }
         ]

@@ -1,0 +1,140 @@
+\begin{thebibliography}{22}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Becker et~al.(2026)Becker, Ulbrich and Rust}]{becker2026rainfall}
+\bibinfo{author}{Becker, N.}, \bibinfo{author}{Ulbrich, U.}, \bibinfo{author}{Rust, H.W.}, \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{Impact of rainfall on driving speed: Combining radar-based measurements and floating car data}.
+\newblock \bibinfo{journal}{Future Transportation} \bibinfo{volume}{6}.
+\newblock \DOIprefix\doi{10.3390/futuretransp6010038}.
+%Type = Article
+\bibitem[{Bergantino et~al.(2024)Bergantino, Gardelli and Rotaris}]{bergantino2024assessing}
+\bibinfo{author}{Bergantino, A.S.}, \bibinfo{author}{Gardelli, A.}, \bibinfo{author}{Rotaris, L.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Assessing transport network resilience: Empirical insights from real-world data studies}.
+\newblock \bibinfo{journal}{Transport Reviews} \DOIprefix\doi{10.1080/01441647.2024.2322434}.
+%Type = Article
+\bibitem[{Bi et~al.(2022)Bi, Ye and Zhu}]{bi2022weather}
+\bibinfo{author}{Bi, H.}, \bibinfo{author}{Ye, Z.}, \bibinfo{author}{Zhu, H.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Data-driven analysis of weather impacts on urban traffic conditions at the city level}.
+\newblock \bibinfo{journal}{Urban Climate} \bibinfo{volume}{41}, \bibinfo{pages}{101065}.
+\newblock \DOIprefix\doi{10.1016/j.uclim.2021.101065}.
+%Type = Article
+\bibitem[{Cai et~al.(2016)Cai, Xu and Yin}]{cai2016rainfall}
+\bibinfo{author}{Cai, M.}, \bibinfo{author}{Xu, M.}, \bibinfo{author}{Yin, S.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Modeling the effects of rainfall intensity on heteroscedastic traffic speed dispersion on urban roads}.
+\newblock \bibinfo{journal}{Journal of Transportation Engineering} \bibinfo{volume}{142}.
+\newblock \DOIprefix\doi{10.1061/(ASCE)TE.1943-5436.0000833}.
+%Type = Article
+\bibitem[{Calvert and Snelder(2018)}]{calvert2018methodology}
+\bibinfo{author}{Calvert, S.C.}, \bibinfo{author}{Snelder, M.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{A methodology for road traffic resilience analysis and review of related concepts}.
+\newblock \bibinfo{journal}{Transportmetrica A: Transport Science} \bibinfo{volume}{14}, \bibinfo{pages}{130--154}.
+\newblock \DOIprefix\doi{10.1080/23249935.2017.1363315}.
+%Type = Techreport
+\bibitem[{{Department for Transport}(2024)}]{dft2024rea}
+\bibinfo{author}{{Department for Transport}}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Climate Change and Transport Infrastructure: Rapid Evidence Assessment}.
+\newblock \bibinfo{type}{Technical Report}. UK Government.
+\newblock \URLprefix \url{https://assets.publishing.service.gov.uk/media/6569b274cd4dda000d082fa3/climate-change-and-transport-infrastructure-rapid-evidence-assessment.pdf}.
+%Type = Article
+\bibitem[{Farahmand et~al.(2024)Farahmand, Yin, Hsu, Savadogo, Espinet~Alegre and Mostafavi}]{farahmand2024integrating}
+\bibinfo{author}{Farahmand, H.}, \bibinfo{author}{Yin, K.}, \bibinfo{author}{Hsu, C.W.}, \bibinfo{author}{Savadogo, I.}, \bibinfo{author}{Espinet~Alegre, X.}, \bibinfo{author}{Mostafavi, A.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Integrating climate projections and probabilistic network analysis into regional transport resilience planning}.
+\newblock \bibinfo{journal}{Transportation Research Part D: Transport and Environment} \bibinfo{volume}{133}, \bibinfo{pages}{104234}.
+\newblock \DOIprefix\doi{10.1016/j.trd.2024.104234}.
+%Type = Article
+\bibitem[{Freeman(1977)}]{freeman1977centrality}
+\bibinfo{author}{Freeman, L.C.}, \bibinfo{year}{1977}.
+\newblock \bibinfo{title}{A set of measures of centrality based on betweenness}.
+\newblock \bibinfo{journal}{Sociometry} \bibinfo{volume}{40}, \bibinfo{pages}{35--41}.
+%Type = Article
+\bibitem[{Ganin et~al.(2017)Ganin, Kitsak, Marchese, Keisler, Seager and Linkov}]{ganin2017resilience}
+\bibinfo{author}{Ganin, A.A.}, \bibinfo{author}{Kitsak, M.}, \bibinfo{author}{Marchese, D.}, \bibinfo{author}{Keisler, J.M.}, \bibinfo{author}{Seager, T.}, \bibinfo{author}{Linkov, I.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Resilience and efficiency in transportation networks}.
+\newblock \bibinfo{journal}{Science Advances} \bibinfo{volume}{3}, \bibinfo{pages}{e1701079}.
+\newblock \DOIprefix\doi{10.1126/sciadv.1701079}.
+%Type = Article
+\bibitem[{Gao et~al.(2024)Gao, Hu and Wang}]{gao2024resilience}
+\bibinfo{author}{Gao, W.}, \bibinfo{author}{Hu, X.}, \bibinfo{author}{Wang, N.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Resilience analysis in road traffic systems to rainfall events: Road environment perspective}.
+\newblock \bibinfo{journal}{Transportation Research Part D: Transport and Environment} \bibinfo{volume}{126}, \bibinfo{pages}{104000}.
+\newblock \DOIprefix\doi{10.1016/j.trd.2023.104000}.
+%Type = Article
+\bibitem[{He et~al.(2026)He, Carhart, Pregnolato and {De Risi}}]{he2026flood}
+\bibinfo{author}{He, K.}, \bibinfo{author}{Carhart, N.}, \bibinfo{author}{Pregnolato, M.}, \bibinfo{author}{{De Risi}, R.}, \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{Flood-induced traffic congestion and accessibility loss for urban road networks using agent-based simulation: The case study of {Bristol}, {UK}}.
+\newblock \bibinfo{journal}{International Journal of Disaster Risk Reduction} \bibinfo{volume}{134}, \bibinfo{pages}{106053}.
+\newblock \DOIprefix\doi{10.1016/j.ijdrr.2026.106053}.
+%Type = Techreport
+\bibitem[{Hranac et~al.(2006)Hranac, Sterzin, Krechmer, Rakha and Farzaneh}]{hranac2006empirical}
+\bibinfo{author}{Hranac, R.}, \bibinfo{author}{Sterzin, E.}, \bibinfo{author}{Krechmer, D.}, \bibinfo{author}{Rakha, H.}, \bibinfo{author}{Farzaneh, M.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Empirical Studies on Traffic Flow in Inclement Weather}.
+\newblock \bibinfo{type}{Technical Report} \bibinfo{number}{FHWA-HOP-07-073}. Federal Highway Administration.
+\newblock \URLprefix \url{https://ops.fhwa.dot.gov/publications/weatherempirical/}.
+%Type = Article
+\bibitem[{Huang et~al.(2022)Huang, Cui, Zhang, Tong, Shi and Liu}]{huang2022overview}
+\bibinfo{author}{Huang, J.}, \bibinfo{author}{Cui, Y.}, \bibinfo{author}{Zhang, L.}, \bibinfo{author}{Tong, W.}, \bibinfo{author}{Shi, Y.}, \bibinfo{author}{Liu, Z.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{An overview of agent-based models for transport simulation and analysis}.
+\newblock \bibinfo{journal}{Journal of Advanced Transportation} \bibinfo{volume}{2022}, \bibinfo{pages}{1252534}.
+\newblock \DOIprefix\doi{10.1155/2022/1252534}.
+%Type = Book
+\bibitem[{McCullagh and Nelder(1989)}]{mccullagh1989glm}
+\bibinfo{author}{McCullagh, P.}, \bibinfo{author}{Nelder, J.A.}, \bibinfo{year}{1989}.
+\newblock \bibinfo{title}{Generalized Linear Models}.
+\newblock \bibinfo{edition}{2} ed., \bibinfo{publisher}{Chapman \& Hall}.
+%Type = Misc
+\bibitem[{{National Highways}(2024)}]{nh2024climate}
+\bibinfo{author}{{National Highways}}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Climate change and the strategic road network}.
+\newblock \URLprefix \url{https://nationalhighways.co.uk/our-work/environment/climate-change-and-the-strategic-road-network/}.
+%Type = Article
+\bibitem[{Nelder and Wedderburn(1972)}]{nelder1972glm}
+\bibinfo{author}{Nelder, J.A.}, \bibinfo{author}{Wedderburn, R.W.M.}, \bibinfo{year}{1972}.
+\newblock \bibinfo{title}{Generalized linear models}.
+\newblock \bibinfo{journal}{Journal of the Royal Statistical Society: Series A} \bibinfo{volume}{135}, \bibinfo{pages}{370--384}.
+%Type = Misc
+\bibitem[{{New Civil Engineer}(2026)}]{nce2026srn}
+\bibinfo{author}{{New Civil Engineer}}, \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{Only 7\% of {UK's} strategic road network meets climate standards set 20 years ago}.
+\newblock \URLprefix \url{https://www.newcivilengineer.com/latest/only-7-of-uks-strategic-road-network-meets-climate-standards-set-20-years-ago-05-02-2026/}.
+%Type = Article
+\bibitem[{Pregnolato et~al.(2017)Pregnolato, Ford, Wilkinson and Dawson}]{pregnolato2017depth}
+\bibinfo{author}{Pregnolato, M.}, \bibinfo{author}{Ford, A.}, \bibinfo{author}{Wilkinson, S.M.}, \bibinfo{author}{Dawson, R.J.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{The impact of flooding on road transport: A depth-disruption function}.
+\newblock \bibinfo{journal}{Transportation Research Part D: Transport and Environment} \bibinfo{volume}{55}, \bibinfo{pages}{67--81}.
+\newblock \DOIprefix\doi{10.1016/j.trd.2017.06.020}.
+%Type = Article
+\bibitem[{Stamos(2023)}]{stamos2023centrality}
+\bibinfo{author}{Stamos, I.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Transportation networks in the face of climate change adaptation: A review of centrality measures}.
+\newblock \bibinfo{journal}{Future Transportation} \bibinfo{volume}{3}, \bibinfo{pages}{809--829}.
+\newblock \DOIprefix\doi{10.3390/futuretransp3030049}.
+%Type = Techreport
+\bibitem[{{UNECE}(2024)}]{unece2024stress}
+\bibinfo{author}{{UNECE}}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Stress Test Framework for Evaluating the Resilience of Transport Systems}.
+\newblock \bibinfo{type}{Technical Report}. United Nations Economic Commission for Europe.
+\newblock \URLprefix \url{https://unece.org/transport/publications/stress-test-framework-evaluating-resilience-transport-systems}.
+%Type = Article
+\bibitem[{Wan and Huang(2024)}]{wan2024paradox}
+\bibinfo{author}{Wan, L.}, \bibinfo{author}{Huang, B.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{The paradox of post-pandemic travel: Reduced car travel but unabated congestion? {Insights} from {Cambridge}, {UK}}.
+\newblock \bibinfo{journal}{SSRN Electronic Journal} \DOIprefix\doi{10.2139/ssrn.4970168}.
+%Type = Article
+\bibitem[{Wassmer et~al.(2024)Wassmer, Merz and Marwan}]{wassmer2024resilience}
+\bibinfo{author}{Wassmer, J.}, \bibinfo{author}{Merz, B.}, \bibinfo{author}{Marwan, N.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Resilience of transportation infrastructure networks to road failures}.
+\newblock \bibinfo{journal}{Chaos: An Interdisciplinary Journal of Nonlinear Science} \bibinfo{volume}{34}, \bibinfo{pages}{013124}.
+\newblock \DOIprefix\doi{10.1063/5.0165839}.
+
+\end{thebibliography}
