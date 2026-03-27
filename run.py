@@ -31,6 +31,7 @@ DEFAULT_PDF_DIR = "Literature_Review"
 ANNO_FILE = "annotation_data_final.json"
 READER_HTML = "literature_reader.html"
 VIEWER_HTML = "literature_viewer.html"
+MAIN_HTML = "literature_viewer.html"  # Main entry point (has all tabs including PDF Reader)
 EXTRACT_SCRIPT = "auto_extract_all.py"
 ANNOTATE_SCRIPT = "annotate_pdfs.py"
 
@@ -120,7 +121,7 @@ def start_server(base_dir, port):
     })
 
     with socketserver.TCPServer(("", port), handler) as httpd:
-        url = f"http://localhost:{port}/{READER_HTML}"
+        url = f"http://localhost:{port}/{MAIN_HTML}"
         print(f"\n  Server running at http://localhost:{port}/")
         print(f"  PDF Reader:  {url}")
         print(f"  Dashboard:   http://localhost:{port}/{VIEWER_HTML}")
