@@ -203,26 +203,72 @@ Embed annotation data as JSON in the HTML. The reader sidebar shows:
 - "ORIGINAL TEXT:" label
 - Numbered list of original passages (each clickable → jumps to its page)
 
-## Verification
+### Step 6: QA Audit with oh-my-claudecode Agents
+
+After generating annotations, run quality audit using oh-my-claudecode's agents.
+These are GENERAL-PURPOSE agents that work well for academic annotation review
+because their framework (evidence-based verification, multi-perspective analysis,
+gap detection) naturally applies to literature review quality.
+
+**Agent 1: `critic` (Opus model)**
+- Spawn as Agent with subagent_type from oh-my-claudecode
+- Task: "Review the annotation quality for [paper]. Read the full PDF and compare
+  against annotation_data_final.json. Check: (1) Are all key method/result/limitation
+  sentences from the paper captured? (2) Is each annotation in the correct category?
+  (3) What important content is MISSING from the annotations?"
+- Critic's multi-perspective protocol naturally checks from statistician/domain-expert/
+  methodologist angles
+- Critic's gap analysis ("What's Missing") catches under-annotated sections
+- Output: VERDICT (REJECT/REVISE/ACCEPT) with specific findings
+
+**Agent 2: `verifier`**
+- Task: "Verify all annotation phrases for [paper] exist in the PDF using
+  fitz search_for(). Check page numbers. Flag duplicates and too-short phrases."
+- Verifier's evidence-based approach ensures every phrase is actually findable
+- Output: verification report with PASS/FAIL per paper
+
+**QA Pipeline:**
+```
+Step 5 output (annotations)
+  → critic reviews each paper for content quality
+  → verifier checks phrase existence + page accuracy
+  → Fix any REJECT/FAIL issues
+  → Re-run until all ACCEPT/PASS
+```
+
+**When to use QA:**
+- ALWAYS run on the first 2-3 papers as a calibration check
+- Run on any paper with fewer than 3 annotations in any category
+- Run on any paper where annotations are concentrated on pages 1-2 (abstract-only)
+
+## Verification Checklist
 - [ ] Each paper has annotations in ALL 4 categories
 - [ ] Method annotations come from methodology section (not abstract)
 - [ ] Conclusion annotations come from results/discussion (not abstract)
 - [ ] Innovation annotations come from introduction or discussion
-- [ ] Limitation annotations come from limitations section
+- [ ] Limitation annotations come from limitations section (not policy recommendations)
 - [ ] All phrases verified with search_for()
+- [ ] No policy implications misclassified as limitations
+- [ ] Annotations span at least 3 different pages per paper
 - [ ] PDF renders at high DPI on retina displays
 - [ ] Clicking sidebar items scrolls to correct page
 - [ ] Platform is integrated as a tab, not standalone
+- [ ] critic agent verdict: ACCEPT for all papers
+- [ ] verifier agent: PASS for all papers
 
 ## Notes
 - This skill works in conjunction with `literature-analyzer` (matrix/dashboard)
   and `academic-literature` (paper download)
-- The full pipeline is: download → read → annotate → platform
+- The full pipeline is: download → read → annotate → QA audit → platform
 - Batch processing with parallel agents (3-4 papers per agent) is efficient
 - Total annotation count of 150-400 across 20 papers is typical
+- oh-my-claudecode's `critic` and `verifier` agents are used AS-IS (not modified)
+  because their general-purpose frameworks naturally apply to academic content review
 
 ## See Also
 - `literature-analyzer`: Generates the overall dashboard and matrix
 - `academic-literature`: Downloads papers with institutional login
-- `deep-research`: 13-agent pipeline for systematic literature review
+- `deep-research`: 18-agent pipeline for systematic literature review
 - `academic-paper`: Uses the LR platform output to write the literature review section
+- oh-my-claudecode `critic`: Multi-perspective quality gate (Opus model)
+- oh-my-claudecode `verifier`: Evidence-based verification
